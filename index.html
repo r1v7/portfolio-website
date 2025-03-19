@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Animated background -->
+    <div class="bg-animation">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glitch-text">Abdullah Alhodar</h1>
+                <div class="title-wrapper">
+                    <p class="subtitle">I'm a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container glass-card">
+                    <img src="profile-placeholder.jpg" alt="Your Name">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-cards">
+                    <div class="about-card glass-card">
+                        <div class="card-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Who I Am</h3>
+                        <p>Hello! I'm a passionate developer with expertise in creating responsive and user-friendly websites. I love solving problems and bringing ideas to life through code.</p>
+                    </div>
+                    <div class="about-card glass-card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>My Background</h3>
+                        <p>With a background in [Your Background], I bring a unique perspective to every project I work on.</p>
+                    </div>
+                    <div class="about-card glass-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>My Approach</h3>
+                        <p>I believe in clean, efficient code and user-centered design. Every project is an opportunity to learn and create something amazing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card" data-category="web">
+                    <div class="project-img">
+                        <img src="project1-placeholder.jpg" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>Description of your first project. What technologies did you use? What problems did you solve?</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card" data-category="app">
+                    <div class="project-img">
+                        <img src="project2-placeholder.jpg" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 2</h3>
+                        <p>Description of your second project. What technologies did you use? What problems did you solve?</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card" data-category="design">
+                    <div class="project-img">
+                        <img src="project3-placeholder.jpg" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 3</h3>
+                        <p>Description of your third project. What technologies did you use? What problems did you solve?</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Photoshop</span>
+                            <span>Illustrator</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-progress" data-progress="90">
+                                <svg class="progress-ring" width="120" height="120">
+                                    <circle class="progress-ring-circle" stroke-width="8" stroke-linecap="round" r="50" cx="60" cy="60"/>
+                                </svg>
+                                <div class="progress-text">
+                                    <span class="progress-percentage">90%</span>
+                                </div>
+                            </div>
+                            <h4>HTML/CSS</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-progress" data-progress="85">
+                                <svg class="progress-ring" width="120" height="120">
+                                    <circle class="progress-ring-circle" stroke-width="8" stroke-linecap="round" r="50" cx="60" cy="60"/>
+                                </svg>
+                                <div class="progress-text">
+                                    <span class="progress-percentage">85%</span>
+                                </div>
+                            </div>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-progress" data-progress="80">
+                                <svg class="progress-ring" width="120" height="120">
+                                    <circle class="progress-ring-circle" stroke-width="8" stroke-linecap="round" r="50" cx="60" cy="60"/>
+                                </svg>
+                                <div class="progress-text">
+                                    <span class="progress-percentage">80%</span>
+                                </div>
+                            </div>
+                            <h4>React</h4>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-progress" data-progress="75">
+                                <svg class="progress-ring" width="120" height="120">
+                                    <circle class="progress-ring-circle" stroke-width="8" stroke-linecap="round" r="50" cx="60" cy="60"/>
+                                </svg>
+                                <div class="progress-text">
+                                    <span class="progress-percentage">75%</span>
+                                </div>
+                            </div>
+                            <h4>Node.js</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Soft Skills</h3>
+                    <div class="soft-skills">
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Teamwork</h4>
+                        </div>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Problem Solving</h4>
+                        </div>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-comments"></i>
+                            <h4>Communication</h4>
+                        </div>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-tasks"></i>
+                            <h4>Project Management</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info glass-card">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/yourname</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>github.com/yourusername</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form glass-card">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required class="form-input">
+                        <label for="name" class="form-label">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required class="form-input">
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required class="form-input">
+                        <label for="subject" class="form-label">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required class="form-input"></textarea>
+                        <label for="message" class="form-label">Message</label>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
