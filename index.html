@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Abdullah Alhodar</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,14 +19,13 @@
     <!-- Navigation -->
     <nav class="glass-nav">
         <div class="container">
-            <div class="logo">Portfolio</div>
+            <div class="logo">Abdullah Alhodar</div>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle"><i class="fas fa-moon"></i></button></li>
             </ul>
             <div class="hamburger">
                 <div class="line"></div>
@@ -51,7 +50,7 @@
             </div>
             <div class="hero-image">
                 <div class="image-container glass-card">
-                    <img src="profile-placeholder.jpg" alt="Your Name">
+                    <img src="img/profile.jpg" alt="Abdullah">
                 </div>
             </div>
         </div>
@@ -79,21 +78,21 @@
                             <i class="fas fa-user"></i>
                         </div>
                         <h3>Who I Am</h3>
-                        <p>Hello! I'm a passionate developer with expertise in creating responsive and user-friendly websites. I love solving problems and bringing ideas to life through code.</p>
+                        <p style="text-align: justify;">I'm a passionate and driven computer science student with a strong focus on artificial intelligence, UI/UX design, and data analysis. I thrive on combining creativity with technical skills to develop meaningful, user-centric, impactful technology solutions. With a deep curiosity and dedication to learning, I aim to contribute to mission-driven projects that drive innovation and real-world change.</p>
                     </div>
                     <div class="about-card glass-card">
                         <div class="card-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <h3>My Background</h3>
-                        <p>With a background in [Your Background], I bring a unique perspective to every project I work on.</p>
+                        <p style="text-align: justify;">Currently pursuing a Bachelor's degree in Computer Science at King Faisal University (2020–2025), I have built a solid foundation in both software development and data science. My hands-on experience includes working with technologies like Python, TensorFlow, PyTorch, and Power BI, and applying them in real-world scenarios such as my graduation project—GymTech App. This fitness and nutrition planning app integrates AI-powered features and intuitive UI/UX design to deliver personalized user experiences.</p>
                     </div>
                     <div class="about-card glass-card">
                         <div class="card-icon">
                             <i class="fas fa-rocket"></i>
                         </div>
                         <h3>My Approach</h3>
-                        <p>I believe in clean, efficient code and user-centered design. Every project is an opportunity to learn and create something amazing.</p>
+                        <p style="text-align: justify;">I believe in combining technical expertise with human-centered design. Whether developing AI-driven features or designing intuitive interfaces, my approach is grounded in problem-solving, collaboration, and continuous learning. I prioritize usability and performance equally, ensuring that solutions are innovative and practical. With a background in Agile development and a mindset shaped by critical thinking, I focus on building systems that are efficient, adaptable, and aligned with user needs.</p>
                     </div>
                 </div>
             </div>
@@ -110,63 +109,73 @@
             <div class="projects-filter">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="AI and Data Science">AI and Data Science</button>
                 <button class="filter-btn" data-filter="design">Design</button>
             </div>
             <div class="projects-grid">
-                <div class="project-card glass-card" data-category="web">
-                    <div class="project-img">
-                        <img src="project1-placeholder.jpg" alt="Project 1">
-                    </div>
-                    <div class="project-info">
-                        <h3>Project 1</h3>
-                        <p>Description of your first project. What technologies did you use? What problems did you solve?</p>
-                        <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card glass-card" data-category="app">
-                    <div class="project-img">
-                        <img src="project2-placeholder.jpg" alt="Project 2">
-                    </div>
-                    <div class="project-info">
-                        <h3>Project 2</h3>
-                        <p>Description of your second project. What technologies did you use? What problems did you solve?</p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
                 <div class="project-card glass-card" data-category="design">
                     <div class="project-img">
-                        <img src="project3-placeholder.jpg" alt="Project 3">
+                        <a href="projects/gymtech.html">
+                            <img src="img/gymtech-app.png" alt="GymTech Fitness App">
+                        </a>
                     </div>
                     <div class="project-info">
-                        <h3>Project 3</h3>
-                        <p>Description of your third project. What technologies did you use? What problems did you solve?</p>
+                        <h3><a href="projects/gymtech.html">GymTech App</a></h3>
+                        <p>A cutting-edge fitness application designed to transform how users approach their health journey. This UI/UX project delivers personalized workout routines, detailed nutrition tracking, and comprehensive health analytics through an intuitive interface. The distinctive purple-themed design combines modern aesthetics with functional elements to enhance user engagement and motivation.</p>
                         <div class="project-tech">
+                            <span>UI/UX</span>
                             <span>Figma</span>
-                            <span>Photoshop</span>
-                            <span>Illustrator</span>
+                            <span>Mobile Design</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="projects/gymtech.html" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
                             <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
+                </div>
+                
+                <div class="project-card glass-card" data-category="design">
+                    <div class="project-img">
+                        <a href="projects/strayhaven.html">
+                            <img src="img/strayhaven-app.png" alt="Stray Haven Pet Adoption App">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="projects/strayhaven.html">Stray Haven</a></h3>
+                        <p>A compassionate pet adoption platform designed to connect stray animals with loving homes. This mobile application features a user-friendly interface for browsing adoptable pets, tracking adoption status, receiving notifications about rescued animals, and managing user profiles with adoption statistics. The app also includes a marketplace for pet supplies and a reporting system for stray animals.</p>
+                        <div class="project-tech">
+                            <span>UI/UX</span>
+                            <span>Mobile App</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/strayhaven.html" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card glass-card" data-category="AI and Data Science">
+                    <div class="project-img">
+                        <a href="projects/movie-recommendation.html">
+                            <img src="img/movie-recommendation.png" alt="Movie Recommendation System">
+                        </a>
+                    </div>
+                    <div class="project-info">
+                        <h3><a href="projects/movie-recommendation.html">Movie Recommendation System</a></h3>
+                        <p>A personalized movie recommendation system using machine learning to address content overload on streaming platforms. This hybrid model combines collaborative filtering and content-based filtering to deliver accurate and diverse recommendations, achieving 82.71% weighted accuracy while mitigating common biases in recommendation systems.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>PySpark</span>
+                            <span>AWS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="projects/movie-recommendation.html" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
                 </div>
             </div>
         </div>
@@ -182,71 +191,72 @@
             <div class="skills-container">
                 <div class="skills-category">
                     <h3>Technical Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-progress" data-progress="90">
-                                <svg class="progress-ring" width="120" height="120">
-                                    <circle class="progress-ring-circle" stroke-width="8" stroke-linecap="round" r="50" cx="60" cy="60"/>
-                                </svg>
-                                <div class="progress-text">
-                                    <span class="progress-percentage">90%</span>
-                                </div>
-                            </div>
-                            <h4>HTML/CSS</h4>
+                    <div class="soft-skills">
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-code"></i>
+                            <h4>Programming Languages & Web Development</h4>
+                            <p>Python, C++, Java, JavaScript, HTML, CSS, FastAPI</p>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-progress" data-progress="85">
-                                <svg class="progress-ring" width="120" height="120">
-                                    <circle class="progress-ring-circle" stroke-width="8" stroke-linecap="round" r="50" cx="60" cy="60"/>
-                                </svg>
-                                <div class="progress-text">
-                                    <span class="progress-percentage">85%</span>
-                                </div>
-                            </div>
-                            <h4>JavaScript</h4>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-brain"></i>
+                            <h4>Data Science & Machine Learning</h4>
+                            <p>NumPy, Pandas, Matplotlib, Seaborn, Scikit-Learn, TensorFlow, PyTorch, OpenCV</p>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-progress" data-progress="80">
-                                <svg class="progress-ring" width="120" height="120">
-                                    <circle class="progress-ring-circle" stroke-width="8" stroke-linecap="round" r="50" cx="60" cy="60"/>
-                                </svg>
-                                <div class="progress-text">
-                                    <span class="progress-percentage">80%</span>
-                                </div>
-                            </div>
-                            <h4>React</h4>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-database"></i>
+                            <h4>Databases</h4>
+                            <p>SQL, MySQL, PostgreSQL, MongoDB</p>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-progress" data-progress="75">
-                                <svg class="progress-ring" width="120" height="120">
-                                    <circle class="progress-ring-circle" stroke-width="8" stroke-linecap="round" r="50" cx="60" cy="60"/>
-                                </svg>
-                                <div class="progress-text">
-                                    <span class="progress-percentage">75%</span>
-                                </div>
-                            </div>
-                            <h4>Node.js</h4>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-chart-bar"></i>
+                            <h4>Data Visualization & BI Tools</h4>
+                            <p>Power BI</p>
+                        </div>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-code-branch"></i>
+                            <h4>Version Control & Tools</h4>
+                            <p>Git, GitHub</p>
+                        </div>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-paint-brush"></i>
+                            <h4>UI/UX Design</h4>
+                            <p>Figma, Canva</p>
                         </div>
                     </div>
                 </div>
+                
                 <div class="skills-category">
                     <h3>Soft Skills</h3>
                     <div class="soft-skills">
                         <div class="soft-skill glass-card">
-                            <i class="fas fa-users"></i>
-                            <h4>Teamwork</h4>
-                        </div>
-                        <div class="soft-skill glass-card">
                             <i class="fas fa-lightbulb"></i>
                             <h4>Problem Solving</h4>
+                            <p>Adept at identifying challenges and developing practical, data-driven solutions.</p>
+                        </div>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-users"></i>
+                            <h4>Team Collaboration</h4>
+                            <p>Experienced in working with cross-functional teams using Agile methodologies.</p>
+                        </div>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-brain"></i>
+                            <h4>Critical Thinking</h4>
+                            <p>Ability to analyze complex systems and propose innovative improvements.</p>
+                        </div>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>Technical Writing</h4>
+                            <p>Skilled in documenting technical processes, models, and user flows clearly and effectively.</p>
+                        </div>
+                        <div class="soft-skill glass-card">
+                            <i class="fas fa-sync-alt"></i>
+                            <h4>Adaptability</h4>
+                            <p>Quick to learn new tools and technologies, and flexible in dynamic environments.</p>
                         </div>
                         <div class="soft-skill glass-card">
                             <i class="fas fa-comments"></i>
                             <h4>Communication</h4>
-                        </div>
-                        <div class="soft-skill glass-card">
-                            <i class="fas fa-tasks"></i>
-                            <h4>Project Management</h4>
+                            <p>Bilingual in Arabic and English, with the ability to present ideas clearly to both technical and non-technical audiences.</p>
                         </div>
                     </div>
                 </div>
@@ -268,28 +278,22 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>your.email@example.com</p>
+                            <p><a href="mailto:alhodarabdullah@gmail.com" style="color: inherit; text-decoration: none;">alhodarabdullah@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
                         <div>
                             <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/yourname</p>
+                            <p><a href="https://www.linkedin.com/in/abdullah-alhodar-0394892a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color: inherit; text-decoration: none;">linkedin.com/in/Abdullah-Alhodar</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-github"></i>
                         <div>
                             <h4>GitHub</h4>
-                            <p>github.com/yourusername</p>
+                            <p><a href="https://github.com/r1v7" target="_blank" style="color: inherit; text-decoration: none;">github.com/r1v7</a></p>
                         </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <form class="contact-form glass-card">
@@ -317,7 +321,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 Your Name. All rights reserved.</p>
+            <p>&copy; 2025 Abdullah Alhodar. All rights reserved.</p>
         </div>
     </footer>
 

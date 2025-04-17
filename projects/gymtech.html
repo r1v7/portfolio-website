@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymTech App - Project Details</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-details {
+            padding: 2rem 0;
+        }
+        
+        .project-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .project-header .underline {
+            margin: 0 auto;
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .project-description {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .project-description h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .project-description p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .meta-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+        
+        .meta-card h3 {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .meta-card h3 i {
+            margin-right: 0.5rem;
+            color: var(--accent);
+        }
+        
+        .meta-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .meta-card ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        
+        .meta-card ul li:before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .back-button:hover {
+            color: var(--accent);
+        }
+        
+        .back-button i {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <!-- Animated background -->
+    <div class="bg-animation">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="container">
+            <div class="logo">Abdullah Alhodar</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#hero">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Details Section -->
+    <section class="section project-details">
+        <div class="container">
+            <a href="../index.html#projects" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            
+            <div class="project-header">
+                <h1>GymTech App</h1>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="project-gallery">
+                <div class="gallery-item">
+                    <img src="../img/gymtech-app.png" alt="GymTech App Overview">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/gymtech-app2.png" alt="GymTech App Features">
+                </div>
+            </div>
+            <div class="project-description glass-card">
+                <h2>Project Overview</h2>
+                <p>GymTech is a comprehensive fitness application designed to transform how users approach their health journey. The app provides personalized workout routines, detailed nutrition tracking, and comprehensive health analytics through an intuitive interface.</p>
+                
+                <p>The distinctive purple-themed design combines modern aesthetics with functional elements to enhance user engagement and motivation. The UI/UX was carefully crafted to ensure accessibility and ease of use while maintaining a visually appealing experience.</p>
+                
+                <h2>Design Process</h2>
+                <p>The design process began with extensive user research to understand the pain points of existing fitness applications. User personas were created to guide the design decisions, ensuring that the final product would meet the needs of various user types.</p>
+                
+                <p>Wireframes were developed to establish the basic structure and flow of the application, followed by high-fidelity mockups that incorporated the visual design elements. User testing was conducted at various stages to refine the interface and improve the overall user experience.</p>
+                
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Personalized workout plans based on user goals and fitness level</li>
+                    <li>Comprehensive nutrition tracking with meal suggestions</li>
+                    <li>Health metrics monitoring and progress visualization</li>
+                    <li>Interactive exercise demonstrations and form guidance</li>
+                    <li>Social features for community support and motivation</li>
+                    <li>Customizable interface with accessibility options</li>
+                </ul>
+            </div>
+            
+            <div class="project-meta">
+                <div class="meta-card glass-card">
+                    <h3><i class="fas fa-tools"></i> Technologies Used</h3>
+                    <ul>
+                        <li>Figma for UI/UX design</li>
+                        <li>ChatGPT for Logo</li>
+                        <li>Canva for icons design</li>
+                    </ul>
+                </div>
+                
+                <div class="meta-card glass-card">
+                    <h3><i class="fas fa-lightbulb"></i> Challenges & Solutions</h3>
+                    <ul>
+                        <li>Creating an intuitive navigation system for complex features</li>
+                        <li>Balancing information density with clean design</li>
+                        <li>Ensuring accessibility across different user abilities</li>
+                        <li>Designing for both iOS and Android platforms</li>
+                    </ul>
+                </div>
+                
+                <div class="meta-card glass-card">
+                    <h3><i class="fas fa-chart-line"></i> Outcomes & Learnings</h3>
+                    <ul>
+                        <li>Improved understanding of fitness app user needs</li>
+                        <li>Enhanced skills in creating accessible interfaces</li>
+                        <li>Developed a cohesive design system for future expansion</li>
+                        <li>Learned effective ways to visualize health data</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Abdullah Alhodar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

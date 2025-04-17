@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stray Haven - App</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-details {
+            padding: 2rem 0;
+        }
+        
+        .project-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .project-header .underline {
+            margin: 0 auto;
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .project-description {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .project-description h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .project-description p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .meta-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+        
+        .meta-card h3 {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .meta-card h3 i {
+            margin-right: 0.5rem;
+            color: var(--accent);
+        }
+        
+        .meta-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .meta-card ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        
+        .meta-card ul li:before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .back-button:hover {
+            color: var(--accent);
+        }
+        
+        .back-button i {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <!-- Animated background -->
+    <div class="bg-animation">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="container">
+            <div class="logo">Abdullah Alhodar</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#hero">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Details Section -->
+    <section class="section project-details">
+        <div class="container">
+            <a href="../index.html#projects" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            
+            <div class="project-header">
+                <h1>Stray Haven</h1>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="project-gallery">
+                <div class="gallery-item">
+                    <img src="../img/strayhaven-app.png" alt="Stray Haven App Overview">
+                </div>
+            </div>
+            
+            <div class="project-description glass-card">
+                <h2>Project Overview</h2>
+                <p>Stray Haven is a mobile application designed to connect stray animals with loving homes. The app provides a seamless experience for users to browse adoptable pets, track adoption status, receive notifications about rescued animals, and manage their adoption journey.</p>
+                
+                <p>The compassionate green-themed design symbolizes growth and care, creating an emotional connection with users while maintaining a clean and intuitive interface. The UI/UX was carefully crafted to ensure accessibility for diverse user groups.</p>
+                
+                <h2>Design Process</h2>
+                <p>The design process began with extensive user research, including interviews with pet adopters and shelter staff to understand pain points in the current adoption process. User personas were created to guide the design decisions, ensuring that the final product would meet the needs of various user types.</p>
+                
+                <p>Wireframes were developed to establish the app's information architecture and core user flows, followed by high-fidelity mockups that incorporated the visual design elements. User testing was conducted at various stages to refine the interface and improve the overall user experience.</p>
+                
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Pet discovery with detailed profiles and filtering options</li>
+                    <li>Real-time notifications about adoption status and rescued animals</li>
+                    <li>Stray animal reporting with location tracking and photo uploads</li>
+                    <li>Pet supplies marketplace supporting animal rescue operations</li>
+                    <li>User profiles with adoption history and impact statistics</li>
+                    <li>Adoption tracking with application status monitoring</li>
+                </ul>
+            </div>
+            
+            <div class="project-meta">
+                <div class="meta-card glass-card">
+                    <h3><i class="fas fa-tools"></i> Technologies Used</h3>
+                    <ul>
+                        <li>Figma for UI/UX design</li>
+                        <li>ChatGPT for Logo</li>
+                        <li>Canva for icons</li>
+                    </ul>
+                </div>
+                
+                <div class="meta-card glass-card">
+                    <h3><i class="fas fa-lightbulb"></i> Challenges & Solutions</h3>
+                    <ul>
+                        <li>Creating an emotional yet functional design language</li>
+                        <li>Balancing feature richness with simplicity for diverse users</li>
+                        <li>Integrating location-based services with user privacy</li>
+                        <li>Designing engagement loops for continued participation</li>
+                    </ul>
+                </div>
+                
+                <div class="meta-card glass-card">
+                    <h3><i class="fas fa-chart-line"></i> Outcomes & Learnings</h3>
+                    <ul>
+                        <li>Improved understanding of user needs and preferences</li>
+                        <li>Developed expertise in compassionate-focused design</li>
+                        <li>Created a scalable platform for future community features</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Abdullah Alhodar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

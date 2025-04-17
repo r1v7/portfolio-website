@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System - Project Details</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .project-details {
+            padding: 2rem 0;
+        }
+        
+        .project-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .project-header .underline {
+            margin: 0 auto;
+        }
+        
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .project-description {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .project-description h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .project-description p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .meta-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+        
+        .meta-card h3 {
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .meta-card h3 i {
+            margin-right: 0.5rem;
+            color: var(--accent);
+        }
+        
+        .meta-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .meta-card ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        
+        .meta-card ul li:before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+        }
+        
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .back-button:hover {
+            color: var(--accent);
+        }
+        
+        .back-button i {
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <!-- Animated background -->
+    <div class="bg-animation">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="container">
+            <div class="logo">Abdullah Alhodar</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#hero">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Details Section -->
+    <section class="section project-details">
+        <div class="container">
+            <a href="../index.html#projects" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+            
+            <div class="project-header">
+                <h1>Movie Recommendation System</h1>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="project-gallery">
+                <div class="gallery-item">
+                    <img src="../img/movie-recommendation.png" alt="Movie Recommendation System Overview">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/Genres.png" alt="Movie Recommendation System Overview">
+                </div>
+                <div class="gallery-item">
+                    <img src="../img/Accuracy.png" alt="Movie Recommendation System Overview">
+                </div>
+            </div>
+
+            
+            <div class="project-description glass-card">
+                <h2>Project Overview</h2>
+                <p>This project aimed to develop a personalized movie recommendation system using machine learning to address the challenge of content overload on streaming platforms. By leveraging collaborative filtering (user ratings) and content-based filtering (metadata like genres, descriptions), the team built a hybrid model to deliver accurate and diverse recommendations. The system utilized a Kaggle dataset of 129,890 entries, focusing on enhancing user experience through tailored suggestions.</p>
+                
+                <h2>Design Process</h2>
+                <p><strong>Data Collection & Preprocessing</strong>: Sourced metadata (genres, ratings, cast, etc.) from Kaggle. Cleaned missing values (e.g., replaced missing runtime/director fields with "Unknown") and standardized formats. Processed text data (descriptions, cast) using TF-IDF vectorization.</p>
+                
+                <p><strong>Exploratory Data Analysis (EDA)</strong>: Analyzed rating distributions, genre frequency, and correlations (e.g., votes vs. ratings). Identified biases: genre imbalance (drama/comedy dominance) and popularity bias (high-rated movies receiving more votes).</p>
+                
+                <p><strong>Model Development</strong>: Applied Singular Value Decomposition (SVD) using the Surprise library for collaborative filtering (RMSE: 0.28, MAE: 0.22). Used TF-IDF to vectorize textual features and compute cosine similarity for content-based filtering. Combined both approaches via weighted averaging to balance accuracy and diversity in the hybrid model.</p>
+                
+                <p><strong>Evaluation</strong>: Tested models using RMSE, MAE, and recommendation accuracy metrics. Visualized results (e.g., accuracy comparisons, top recommendations).</p>
+                
+                <h2>Key Features</h2>
+                <ul>
+                    <li>Hybrid Approach: Merged collaborative and content-based filtering to improve recommendation diversity and precision</li>
+                    <li>Metadata Utilization: Leveraged genres, cast, descriptions, and ratings for personalized suggestions</li>
+                    <li>Bias Mitigation: Addressed genre imbalance and popularity bias through preprocessing and hybrid scoring</li>
+                    <li>Scalability: Implemented PySpark and AWS EMR for handling large datasets</li>
+                </ul>
+            </div>
+            
+            <div class="project-meta">
+                <div class="meta-card glass-card">
+                    <h3><i class="fas fa-tools"></i> Technologies Used</h3>
+                    <ul>
+                        <li>Python for core development</li>
+                        <li>Pandas, NumPy for preprocessing</li>
+                        <li>Matplotlib, Seaborn for visualization</li>
+                        <li>Scikit-learn, Surprise for ML models</li>
+                        <li>PySpark for distributed computing</li>
+                        <li>AWS EMR for cloud-based processing</li>
+                        <li>Jupyter Notebook for prototyping</li>
+                    </ul>
+                </div>
+                
+                <div class="meta-card glass-card">
+                    <h3><i class="fas fa-lightbulb"></i> Challenges & Solutions</h3>
+                    <ul>
+                        <li>Data Sparsity: Imputed missing data with "Unknown" or predictive models</li>
+                        <li>Popularity Bias: Adjusted hybrid model weights to balance popularity and relevance</li>
+                        <li>Genre Imbalance: Implemented custom taxonomies and feature reweighting</li>
+                        <li>Real-Time Processing: Leveraged PySpark and AWS EMR for distributed computing</li>
+                    </ul>
+                </div>
+                
+                <div class="meta-card glass-card">
+                    <h3><i class="fas fa-chart-line"></i> Outcomes & Learnings</h3>
+                    <ul>
+                        <li>Hybrid model achieved 82.71% weighted accuracy</li>
+                        <li>Collaborative filtering showed low error rates (RMSE: 0.28)</li>
+                        <li>Content-based filtering achieved 82% average recommendation accuracy</li>
+                        <li>Learned that hybrid models effectively mitigate individual method limitations</li>
+                        <li>Discovered importance of data preprocessing for model reliability</li>
+                        <li>Identified need for proactive bias mitigation strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Abdullah Alhodar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
