@@ -335,6 +335,13 @@ body {
     overflow-x: hidden;
 }
 
+link[rel="icon"],
+link[rel="shortcut icon"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -342,6 +349,7 @@ body {
     position: relative;
     z-index: 1;
 }
+
 
 a {
     text-decoration: none;
