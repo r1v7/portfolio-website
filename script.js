@@ -1,3 +1,16 @@
+// Cursor spotlight effect
+const cursorGlow = document.querySelector('.cursor-glow');
+if (cursorGlow) {
+    window.addEventListener('mousemove', (e) => {
+        cursorGlow.style.left = `${e.clientX}px`;
+        cursorGlow.style.top = `${e.clientY}px`;
+        cursorGlow.classList.add('active');
+    });
+    window.addEventListener('mouseleave', () => {
+        cursorGlow.classList.remove('active');
+    });
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
