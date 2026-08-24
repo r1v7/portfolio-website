@@ -1,26 +1,27 @@
-# Modern Portfolio Website
+# Abdullah Alhodar — Portfolio
 
-A modern, responsive portfolio website built with HTML, CSS, and JavaScript. This portfolio features a sleek design with glassmorphism effects, smooth animations, and a dark/light theme toggle.
+Personal portfolio built with [Next.js](https://nextjs.org) (App Router), TypeScript, and Tailwind CSS.
 
-## Features
+## Getting Started
 
-- Responsive design that works on all devices
-- Dark and light theme options
-- Animated background with blob effects
-- Interactive project filtering
-- Skill progress visualization with SVG circles
-- Contact form
-- Smooth scrolling navigation
-- Modern glassmorphism UI elements
+```bash
+npm install
+npm run dev
+```
 
-## Technologies Used
+Open [http://localhost:3000](http://localhost:3000).
 
-- HTML5
-- CSS3 (Flexbox, Grid, Animations)
-- JavaScript (ES6+)
-- Font Awesome icons
-- Google Fonts
+## Build
 
-## Preview
+```bash
+npm run build
+npm start
+```
 
-![Portfolio Preview](preview.png)
+## Structure
+
+- `app/page.tsx` — home page (hero, about, projects, skills, contact)
+- `app/projects/[slug]/page.tsx` — dynamic project detail pages
+- `app/data/projects.ts` — project content
+- `app/components/` — UI components
+- `public/img/` — images
