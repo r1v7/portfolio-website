@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
-// Set BASE_PATH (e.g. "/portfolio-website") when deploying to a GitHub Pages
+// Set NEXT_PUBLIC_BASE_PATH (e.g. "/portfolio-website") when deploying to a GitHub Pages
 // project site. Leave empty for a custom domain or user/org site.
-const basePath = process.env.BASE_PATH ?? "";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const nextConfig: NextConfig = {
   output: "export",
