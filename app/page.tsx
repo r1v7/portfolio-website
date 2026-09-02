@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "./lib/asset";
 import Nav from "./components/Nav";
 import Reveal from "./components/Reveal";
 import TypedRoles from "./components/TypedRoles";
@@ -84,7 +85,7 @@ export default function Home() {
               <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-accent to-accent-2 opacity-20 blur-2xl" />
               <div className="relative aspect-square w-64 overflow-hidden rounded-[2rem] border border-border sm:w-80">
                 <Image
-                  src="/img/profile.jpg"
+                  src={asset("/img/profile.jpg")}
                   alt="Abdullah Alhodar"
                   fill
                   className="object-cover"

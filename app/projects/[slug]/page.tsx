@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { asset } from "../../lib/asset";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects, getProject } from "../../data/projects";
@@ -64,7 +65,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                   key={src}
                   className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-border bg-surface"
                 >
-                  <Image src={src} alt={project.title} fill className="object-cover" />
+                  <Image src={asset(src)} alt={project.title} fill className="object-cover" />
                 </div>
               ))}
             </div>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { asset } from "../lib/asset";
 import Link from "next/link";
 import type { Project } from "../data/projects";
 
@@ -40,7 +41,7 @@ export default function ProjectGrid({ projects }: { projects: Project[] }) {
           >
             <div className="relative h-56 w-full overflow-hidden">
               <Image
-                src={project.cover}
+                src={asset(project.cover)}
                 alt={project.title}
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"

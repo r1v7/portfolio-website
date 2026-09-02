@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 import Spotlight from "./components/Spotlight";
+import { asset } from "./lib/asset";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     "Abdullah Alhodar — Computer Science graduate specializing in AI, UI/UX design, and data analysis. Explore projects, skills, and ways to get in touch.",
   metadataBase: new URL("https://abdullah-alhodar.dev"),
   icons: {
-    icon: "/img/favicon.ico",
+    icon: asset("/img/favicon.ico"),
   },
 };
 
